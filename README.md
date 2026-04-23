@@ -30,8 +30,6 @@ A proposta é simular um ambiente de **Data Lakehouse**, explorando operações 
 
 A estrutura foi pensada para refletir um projeto real de engenharia de dados:
 
-
-.
 - ├── data/ # Dados de entrada e testes
 - ├── docs/ # Documentação com MkDocs
 - ├── notebooks/ # Experimentos e análises com Spark
@@ -74,7 +72,6 @@ E por fim rodar o jupyter para executar os comandos do delta lake e iceberg
 poetry run jupyter lab
 ```
 
-```
 👥 Integrantes
 - Joao Vitor de Oliveira
 - Luiz Fillipy Vefago Binatti
