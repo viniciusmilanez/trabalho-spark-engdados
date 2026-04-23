@@ -72,7 +72,7 @@ E por fim rodar o jupyter para executar os comandos do delta lake e iceberg
 poetry run jupyter lab
 ```
 
-👥 Integrantes
+## 👥 Integrantes
 - Joao Vitor de Oliveira
 - Luiz Fillipy Vefago Binatti
 - Vinicius Pedroso Milanez
