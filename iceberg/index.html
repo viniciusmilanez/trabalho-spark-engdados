@@ -4,23 +4,23 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Trabalho Spark</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Apache Iceberg - Trabalho Spark</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">Trabalho Spark</a>
+                <a class="navbar-brand" href="..">Trabalho Spark</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -30,17 +30,17 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Início</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../spark/" class="nav-link">Apache Spark</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../delta/" class="nav-link">Delta Lake</a>
+                            </li>
                             <li class="navitem active">
-                                <a href="." class="nav-link">Início</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="spark/" class="nav-link">Apache Spark</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="delta/" class="nav-link">Delta Lake</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="iceberg/" class="nav-link">Apache Iceberg</a>
+                                <a href="./" class="nav-link">Apache Iceberg</a>
                             </li>
                         </ul>
 
@@ -51,12 +51,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../delta/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="spark/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -77,62 +77,12 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
         <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#projeto-de-engenharia-de-dados" class="nav-link">Projeto de Engenharia de Dados</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#cenario" class="nav-link">Cenário</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#objetivo-do-projeto" class="nav-link">Objetivo do Projeto</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#tecnologias-utilizadas" class="nav-link">Tecnologias Utilizadas</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#repositorio-github" class="nav-link">Repositório GitHub</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="projeto-de-engenharia-de-dados">Projeto de Engenharia de Dados</h1>
-<p>Nesse trabalho, será feito o uso do Apache Spark integrado juntamente com o Delta Lake e Apache Iceberg para o processamento e gerenciamento de dados. </p>
-<p>O objetivo do nosso trabalho é demonstrar operações de manipulação de dados - Insert, Update e Delete - utilizando tabelas de data lake.</p>
-<h2 id="cenario">Cenário</h2>
-<p>A base de dados representa um sistema de vendas de produtos tecnológicos, como mouse, notebook, teclado, fones de ouvidos, entre outros itens, contendo as seguintes informações:</p>
-<ul>
-<li>ID da venda  </li>
-<li>Produto  </li>
-<li>Quantidade  </li>
-<li>Valor unitário  </li>
-<li>Data da venda  </li>
-<li>Região  </li>
-</ul>
-<p>Esses dados são usados para simular operações e manipular em tabelas transacionais dentro do ambiente de engenharia de dados.</p>
-<h2 id="objetivo-do-projeto">Objetivo do Projeto</h2>
-<p>O projeto tem como foco:</p>
-<ul>
-<li>Demonstrar o uso do Apache Spark (PySpark) no processamento de dados; </li>
-<li>Utilizar Delta Lake e Apache Iceberg como formatos de tabela;  </li>
-<li>Realizar operações de Insert, Update e Delete.</li>
-</ul>
-<h2 id="tecnologias-utilizadas">Tecnologias Utilizadas</h2>
-<p>As tecnologias utilizadas para rodarem o projeto foram:</p>
-<ul>
-<li>Apache Spark (PySpark);  </li>
-<li>Delta Lake;  </li>
-<li>Apache Iceberg; </li>
-</ul>
-<h2 id="repositorio-github">Repositório GitHub</h2>
-<p><a href="https://github.com/viniciusmilanez/trabalho-spark-engdados" target="_blank">Para acessar o nosso repositório, clique aqui.</a></p></div>
+</div>
             </div>
         </div>
 
@@ -140,14 +90,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -212,8 +162,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.5.3
-Build Date UTC : 2026-04-23 01:11:59.217937+00:00
--->
