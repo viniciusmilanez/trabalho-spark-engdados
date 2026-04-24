@@ -58,18 +58,38 @@ A estrutura foi pensada para refletir um projeto real de engenharia de dados:
 
 O primeiro passo seria clonar o repositório em seu vscode
 
+
 ```bash
 git clone https://github.com/viniciusmilanez/trabalho-spark-engdados.git
 ```
+
 Posteriormente no terminal instalar as dependências do poetry e posteriormente executar o ambiente do poetry
+
 
 ```bash
 poetry install && poetry shell
 ```
+
 E por fim rodar o jupyter para executar os comandos do delta lake e iceberg
+
 
 ```bash
 poetry run jupyter lab
+```
+
+## 📚 Mkdocs
+
+Caso queira ficar a documentação do projeto documentada no mkdocs
+
+
+```bash
+pip install mkdocs
+```
+
+Ele irá gerar um link como o abaixo, clicando nele, irá abrir a pagina de documentação no browser
+
+```bash
+http://127.0.0.1:8000
 ```
 
 ## 👥 Integrantes
