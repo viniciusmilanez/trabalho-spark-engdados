@@ -95,4 +95,5 @@ Caso queira analisar a documentação do projeto feita em mkdocs, basta acessar 
 
 Referências
 
-https://www.youtube.com/watch?v=2ubkqLY-cbE
+- https://www.youtube.com/watch?v=2ubkqLY-cbE
+- https://www.databricks.com/br/blog/what-is-apache-spark
