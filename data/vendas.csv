@@ -1,7 +1,0 @@
-id_venda,produto,quantidade,valor_unitario,data_venda,regiao
-1,Notebook Dell,2,3500.00,2024-01-15,Sul
-2,Mouse Logitech,5,120.00,2024-01-16,Sul
-3,Teclado Mecânico,1,800.00,2024-01-17,Nordeste
-4,Monitor LG,1,1500.00,2024-01-18,Sudeste
-5,iPhone 15,3,5500.00,2024-01-19,Norte
-6,Fone Bluetooth,10,250.00,2024-01-20,Sul

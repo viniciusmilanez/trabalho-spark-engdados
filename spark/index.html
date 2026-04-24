@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Delta Lake - Trabalho Spark</title>
+        <title>Apache Spark - Trabalho Spark</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -33,11 +33,11 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Início</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../spark/" class="nav-link">Apache Spark</a>
-                            </li>
                             <li class="navitem active">
-                                <a href="./" class="nav-link">Delta Lake</a>
+                                <a href="./" class="nav-link">Apache Spark</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../delta/" class="nav-link">Delta Lake</a>
                             </li>
                             <li class="navitem">
                                 <a href="../iceberg/" class="nav-link">Apache Iceberg</a>
@@ -51,12 +51,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../spark/" class="nav-link">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../iceberg/" class="nav-link">
+                                <a rel="next" href="../delta/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -78,7 +78,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#fonte-de-dados" class="nav-link">Fonte de Dados</a>
+            <li class="nav-item" data-level="2"><a href="#spark" class="nav-link">Spark</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -87,22 +87,24 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="fonte-de-dados">Fonte de Dados</h2>
-<p>Os dados utilizados no projeto foram extraídos de um arquivo CSV contendo informações das vendas de uma loja fictícia de produtos eletrônicos.</p>
-<h3 id="estrutura-do-schema">Estrutura do Schema</h3>
-<p>Abaixo, temos criação da estrutura do Schema CSV, que basicamente define a estrutura, o tipo de dados e as regras para um arquivo de valores separados
-<img src="../tabela_base.png" style="display:block; margin: 0;"></p>
-<p>Aqui, é a tabela de criação delta, que mostra todos os atributos a serem preenchidos, bem como seu tipo (inteiro, string, etc.).
-<img src="../tabela_delta.png" style="display:block; margin: 0;"></p>
-<p>Por fim, abaixo estará exemplos das manipulações que podem ser feitas.</p>
-<div style="display: flex;">
-  <img src="../insertD.png" style="width: 33%; margin: 0;">
-  <img src="../updateD.png" style="width: 33%; margin: 0;">
-  <img src="../deleteD.png" style="width: 33%; margin: 0;">
-</div>
-<p>A 1° imagem apresenta um Insert de dois produtos, com seus respectivos Ids, nomes, quantidade, valor unitário, data da venda e a região onde aconteceu.</p>
-<p>Na 2° imagem, está mostrando um Update, onde o produto com Id de venda "2000" (mouse) teve seu preço aumentado de R$ 150 para R$ 999. </p>
-<p>Por fim, a 3° imagem apresenta um Delete do item que possui Id de venda "2001" (teclado), onde foi completamente apagado.</p></div>
+<h2 id="spark">Spark</h2>
+<p>
+O Apache Spark é um framework de processamento distribuído projetado para trabalhar com altos volumes de dados de forma rápida e escalável. Ele permite executar tarefas em clusters, dividindo o processamento entre múltiplos nós.
+</p>
+<p>
+Quando utilizado em conjunto com o Delta Lake, o Spark ganha ainda mais confiabilidade e garantia na qualidade dos dados. Essa integração permite o uso de recursos como controle de versões, transações ACID e operações eficientes de INSERT, UPDATE e DELETE, tornando-o uma excelente escolha para pipelines de dados modernos.
+</p>
+<p>
+Na prática, o Spark se torna uma ferramenta essencial para empresas que precisam lidar com grandes volumes de dados, permitindo desde a ingestão e transformação até a análise e geração de insights, tudo isso de forma distribuída, integrada e com alta performance.
+</p>
+
+<p>O PySpark é a interface do Spark para a linguagem Python, isso permite que desenvolvedores possam utilizar toda a capacidade do Spark com a sintaxe do Python.</p>
+
+<p>Aqui, vemos o Spark sendo utilizado com o Delta, além de conter os imports e as configurações necessárias para funcionarem. A junção entre eles traz uma confiabilidade e garantia da qualidade dos dados. Além disso, ele é uma ótima escolha para pipelines integrados e tem uma alta performance em operações de Update e Delete.
+<img src="../spark_delta.png" style="display:block; margin: 0;"></p>
+<p>Aqui, vemos o Spark sendo utilizado com o Iceberg, e assim como o Delta, também há o import e algumas configurações para garantirem um bom funcionamento. Usar Spark e Iceberg proporciona uma flexibilidade e permite uma evolução de partições e esquemas, sem a necessidade de reescrever os dados. Ele garante um  alto desempenho em Data Lakes massivos e multiferramentas.
+    
+<img src="../spark_iceberg.png" style="display:block; margin: 0;"></p></div>
             </div>
         </div>
 
