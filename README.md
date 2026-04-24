@@ -28,8 +28,6 @@ A proposta é simular um ambiente de **Data Lakehouse**, explorando operações 
 
 ## 🧱 Arquitetura do Projeto
 
-A estrutura foi pensada para refletir um projeto real de engenharia de dados:
-
 - ├── data/ # Dados de entrada e testes
 - ├── docs/ # Documentação com MkDocs
 - ├── notebooks/ # Experimentos e análises com Spark
@@ -79,25 +77,9 @@ poetry run jupyter lab
 
 ## 📚 Mkdocs
 
-Caso queira ficar a documentação do projeto documentada no mkdocs
+Caso queira analisar a documentação do projeto feita em mkdocs, basta acessar o link abaixo
 
-
-```bash
-pip install mkdocs
-```
-
-Após isso, rodar o comando para configurar o ambiente
-
-
-```bash
-mkdocs serve
-```
-
-Ele irá gerar um link como o abaixo, clicando nele, irá abrir a pagina de documentação no browser
-
-```bash
-http://127.0.0.1:8000
-```
+[Documentação do projeto](https://viniciusmilanez.github.io/trabalho-spark-engdados/)
 
 ## 👥 Integrantes
 - Joao Vitor de Oliveira
