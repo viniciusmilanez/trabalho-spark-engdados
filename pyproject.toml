@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "trabalho-spark-engdados"
 version = "1.0.0"
+package-mode = false
 description = "Spark Delta Iceberg SATC"
-authors = ["Vinicius Milanez vinicius.254711@alunosatc.edu.br"]
+authors = ["Vinicius Milanez <vinicius@email.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -11,6 +12,7 @@ delta-spark = "3.2.0"
 jupyter = "^1.0.0"
 jupyterlab = "^4.1.0"
 pandas = "^2.1.0"
+mkdocstrings = {extras = ["python"], version = "^1.0.4"}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
