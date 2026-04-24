@@ -86,6 +86,13 @@ Caso queira ficar a documentação do projeto documentada no mkdocs
 pip install mkdocs
 ```
 
+Após isso, rodar o comando para configurar o ambiente
+
+
+```bash
+mkdocs serve
+```
+
 Ele irá gerar um link como o abaixo, clicando nele, irá abrir a pagina de documentação no browser
 
 ```bash
