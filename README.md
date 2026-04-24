@@ -17,6 +17,13 @@ A proposta é simular um ambiente de **Data Lakehouse**, explorando operações 
 
 ---
 
+## 💻 Ambiente de Desenvolvimento
+O projeto foi desenvolvido utilizando WSL (Windows Subsystem for Linux) com Ubuntu, permitindo a execução de um ambiente Linux diretamente no Windows. 
+
+Essa configuração facilitou a instalação e execução das dependências do ecossistema de engenharia de dados.
+
+---
+
 ## 🔥 Principais Features
 
 - ✅ INSERT em tabelas versionadas  
@@ -85,3 +92,7 @@ Caso queira analisar a documentação do projeto feita em mkdocs, basta acessar 
 - Joao Vitor de Oliveira
 - Luiz Fillipy Vefago Binatti
 - Vinicius Pedroso Milanez
+
+Referências
+
+https://www.youtube.com/watch?v=2ubkqLY-cbE
